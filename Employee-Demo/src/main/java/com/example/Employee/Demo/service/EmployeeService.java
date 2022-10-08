@@ -5,7 +5,7 @@ import com.example.Employee.Demo.entity.Employee;
 import java.util.List;
 
 public interface EmployeeService {
-    public List<Employee> getAllEmployees();
+
 
     public Employee getEmployeeById(int id) ;
 

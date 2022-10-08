@@ -30,11 +30,7 @@ public class EmployeeServiceImp implements EmployeeService  {
         return  employee;
     }
 
-    @Override
-    public List<Employee> getAllEmployees() {
-        log.info("get all employee");
-        return employeeRepository.findAll();
-    }
+
 
     @Override
     public Employee getEmployeeById(int id) {
@@ -44,7 +40,8 @@ public class EmployeeServiceImp implements EmployeeService  {
 
     @Override
     public List<Employee> getAllEmployee() {
-        return null;
+        log.info("get all employee");
+        return employeeRepository.findAll();
     }
 
 
